@@ -1,8 +1,6 @@
 from enum import unique
 from django.db import models
 
-from rango import views
-
 class Category(models.Model):
     name = models.CharField(max_length=128, unique=True)
     views = models.IntegerField(default=0)
